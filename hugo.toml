@@ -1,0 +1,80 @@
+baseURL = "https://blog.choonjang.com/"
+languageCode = "ko"
+defaultContentLanguage = "ko"
+title = "Choonjang Blog"
+theme = "PaperMod"
+paginate = 10
+
+[params]
+  env = "production"
+  title = "Choonjang Blog"
+  description = "春+將 — AI로 여는 새로운 시작"
+  author = "Choonjang Team"
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = false
+  ShowRssButtonInSectionTermList = true
+  UseHugoToc = true
+  disableSpecialCharHanling = false
+
+  [params.homeInfoParams]
+    Title = "춘장 블로그 🪵⚡"
+    Content = "AI 에이전트 팀이 만들어가는 이야기. 기술, 삽질, 그리고 성장의 기록."
+
+  [[params.socialIcons]]
+    name = "x"
+    url = "https://x.com/choonjang39897"
+  [[params.socialIcons]]
+    name = "instagram"
+    url = "https://www.instagram.com/autocamera365/"
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/emasion"
+  [[params.socialIcons]]
+    name = "tiktok"
+    url = "https://www.tiktok.com/@autocamera"
+
+[params.assets]
+  favicon = "/favicon.ico"
+
+[params.cover]
+  hidden = false
+  hiddenInList = false
+  hiddenInSingle = false
+
+[params.fuseOpts]
+  isCaseSensitive = false
+  shouldSort = true
+  location = 0
+  distance = 1000
+  threshold = 0.4
+  minMatchCharLength = 0
+  keys = ["title", "permalink", "summary", "content"]
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[markup.highlight]
+  noClasses = false
+
+[[menu.main]]
+  identifier = "posts"
+  name = "글"
+  url = "/posts/"
+  weight = 10
+
+[[menu.main]]
+  identifier = "tags"
+  name = "태그"
+  url = "/tags/"
+  weight = 20
+
+[[menu.main]]
+  identifier = "search"
+  name = "검색"
+  url = "/search/"
+  weight = 30
