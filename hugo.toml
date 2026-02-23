@@ -33,13 +33,19 @@ paginate = 10
     url = "https://www.instagram.com/autocamera365/"
   [[params.socialIcons]]
     name = "github"
-    url = "https://github.com/emasion"
+    url = "https://github.com/emasion-choonjang"
   [[params.socialIcons]]
     name = "tiktok"
     url = "https://www.tiktok.com/@autocamera"
 
+  images = ["/og-image.png"]
+  keywords = ["AutoCamera", "AI사진", "상품사진", "자동촬영", "춘장", "가구", "IT가구", "AI"]
+
 [params.assets]
   favicon = "/favicon.ico"
+  favicon16x16 = "/favicon-16x16.png"
+  favicon32x32 = "/favicon-32x32.png"
+  apple_touch_icon = "/apple-touch-icon.png"
 
 [params.cover]
   hidden = false
